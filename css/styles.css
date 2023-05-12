@@ -233,6 +233,13 @@ ul {
 .decor-line {
   color: var(--ocean);
 }
+
+.main-photo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
+
 .decor-line::after {
   content: "";
   position: absolute;
@@ -787,8 +794,9 @@ body {
     border-radius: 4px; */
 }
 .offer-list-item {
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
+  text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -839,6 +847,7 @@ body {
   gap: 24px;
 }
 .main-gallery-text {
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -861,7 +870,7 @@ body {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .gallery-top {
-  padding-top: 96px;
+  padding-top: 100px;
   padding-bottom: 120px;
 }
 .gallery-title {
@@ -900,7 +909,7 @@ body {
 
 .team-gellery {
   background-color: var(--cloud);
-  font-weight: 500;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -967,9 +976,6 @@ body {
 .customers {
   padding-top: 96px;
   padding-bottom: 96px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
 .customers-container {
@@ -979,6 +985,7 @@ body {
 }
 .customers-wrap {
   width: 428px;
+  margin: auto;
 }
 .customers-text {
   font-family: "Roboto";
@@ -1037,7 +1044,6 @@ body {
 /* -------------------------footer----------------------------- */
 
 .footer {
-  display: flex;
   background-color: var(--naviblue);
   color: #ffffff;
   padding-top: 96px;
@@ -1393,7 +1399,7 @@ body {
     align-items: flex-start;
   }
   .offer-list-item {
-    justify-content: flex-start;
+    text-align: start;
   }
   .icon-container {
     display: none;
@@ -1410,6 +1416,9 @@ body {
 
   .customers-wrap {
     width: 552px;
+  }
+  .customers-list {
+    column-gap: 24px;
   }
   .container-footer {
     width: 768px;
@@ -1445,7 +1454,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    width: 1158px;
   }
 
   .logo-header {
@@ -1454,7 +1463,10 @@ body {
   .header-container {
     gap: 40px;
   }
-
+  .mail {
+    font-size: 16px;
+    line-height: 1.5;
+  }
   .list-container {
     flex-direction: row;
     align-content: center;
@@ -1479,11 +1491,16 @@ body {
   }
 
   .mainpage-hero {
+    max-width: 1440px;
     padding-top: 188px;
     padding-bottom: 188px;
   }
   .lable {
     margin-bottom: 18px;
+  }
+  .offers {
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
   .offers-list-container {
     gap: 24px;
@@ -1500,7 +1517,7 @@ body {
   }
 
   .main-gallery {
-    display: flex;
+    display: block;
   }
   .main-gallery-list {
     justify-content: center;
