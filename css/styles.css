@@ -264,12 +264,12 @@ ul {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 12px;
+  /* gap: 12px; */
 }
 .mail {
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.17px;
+  line-height: 1.17;
   /* font-weight: 400;
     font-size: 16px;
     line-height: 1.5; */
@@ -687,7 +687,7 @@ body {
   letter-spacing: 0.02em;
   color: #ffffff;
   line-height: 1.11;
-  width: 320px;
+  max-width: 320px;
   margin: 0 auto;
 }
 
@@ -809,9 +809,11 @@ body {
 
 .offers-container {
 }
+
 .offers-title {
-  flex-basis: auto;
-  width: 264px;
+  max-width: 396px;
+  /* flex-basis: auto;
+  width: 264px; */
 }
 
 .offers-list {
@@ -984,9 +986,12 @@ body {
   justify-content: center;
 }
 .customers-wrap {
-  width: 428px;
+  max-width: 426px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: auto;
 }
+
 .customers-text {
   font-family: "Roboto";
   font-size: 36px;
@@ -1337,7 +1342,7 @@ body {
   }
   .list-container {
     display: flex;
-    gap: 12px;
+    /* gap: 12px; */
     flex-wrap: wrap;
   }
 
@@ -1365,13 +1370,18 @@ body {
       }
     }
   }
+
+  .mainpage-title {
+    max-width: 496px;
+  }
+
   .mainpage-hero-title {
     font-size: 56px;
     text-align: center;
     letter-spacing: 0.02em;
     color: #ffffff;
     line-height: 1.07;
-    width: 496px;
+    max-width: 496px;
     height: 120px;
     margin: 0 auto;
   }
@@ -1415,7 +1425,7 @@ body {
   }
 
   .customers-wrap {
-    width: 552px;
+    width: 582px;
   }
   .customers-list {
     column-gap: 24px;
