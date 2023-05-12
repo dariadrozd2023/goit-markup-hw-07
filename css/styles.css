@@ -1193,7 +1193,6 @@ body {
   align-items: center;
   flex-direction: column;
   gap: 16px;
-  /* align-items: flex-end; */
 }
 
 .icon-subscribe {
@@ -1570,5 +1569,8 @@ body {
   }
   .footer-form {
     width: 453px;
+  }
+  .form-subscribe {
+    gap: 0;
   }
 }
