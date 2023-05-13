@@ -49,6 +49,9 @@ ul {
 }
 
 @media screen and (max-width: 768px) {
+  .container {
+    max-width: 428px;
+  }
   .js-open-menu {
     display: block;
   }
@@ -65,12 +68,8 @@ ul {
   .mob-menu.is-open {
     display: block;
   }
-  .mainpage-hero {
-    margin-top: 70px;
-  }
 }
 .mob-header {
-  position: fixed;
   background-color: white;
   width: 100%;
 
@@ -87,6 +86,7 @@ ul {
   height: 22px;
   padding: 0;
   border: transparent;
+  background-color: transparent;
 }
 .mob-btn-icon {
   stroke: var(--naviblue);
@@ -98,19 +98,32 @@ ul {
   top: 0%;
   left: 50%;
   transform: translate(-50%);
-  width: 100%;
+  width: 428px;
   height: 100%;
-  padding-top: 24px;
+  padding-top: 80px;
   padding-right: 24px;
   padding-bottom: 40px;
   padding-left: 40px;
   background-color: #fff;
+
+  /* transition: 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+}
+@media screen and (max-width: 427px) {
+  .mob-menu {
+    width: 100%;
+  }
+  .mob-header {
+    width: 100%;
+  }
+  .footer-input {
+    width: 100%;
+  }
 }
 .mob-menu-cross-button {
   /*display: flex;*/
   position: relative;
   margin-left: auto;
-  margin-bottom: 32px;
+  /* margin-bottom: 32px; */
   background: white;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
@@ -125,7 +138,6 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  margin-top: 80px;
 }
 .menu-list {
   font-weight: 700;
@@ -148,17 +160,17 @@ ul {
   height: 92%;
 }
 .menu-soc-list {
+  margin-top: 48px;
   display: flex;
   flex-wrap: wrap;
-  gap: 56px;
-  justify-content: center;
+  gap: 20px 56px;
+
   align-items: center;
 }
 
 .menu-list-container {
   display: flex;
   flex-direction: column-reverse;
-  margin-bottom: 48px;
 }
 
 .address-social-wrap {
@@ -320,7 +332,7 @@ ul {
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
-  margin-right: 76px;
+  /* margin-right: 76px; */
 }
 .list-container {
   display: block;
@@ -632,6 +644,7 @@ body {
   justify-content: center;
   width: 16px;
   height: 16px;
+  flex-shrink: 0;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -1129,6 +1142,7 @@ body {
 }
 
 .footer-form-text {
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -1137,7 +1151,7 @@ body {
 }
 
 .footer-input {
-  width: 100%;
+  /* width: 398px; */
   height: 40px;
   background-color: inherit;
   border: 1px solid #ffffff;
@@ -1315,6 +1329,10 @@ body {
     display: flex;
     justify-content: space-between;
     gap: 24px;
+  }
+  .header-list {
+    display: flex;
+    gap: 48px;
   }
   .logo-header {
     margin-right: 120px;
@@ -1499,7 +1517,7 @@ body {
   }
 
   .button-hero {
-    margin-top: 36px;
+    margin-top: 48px;
   }
 
   .mainpage-hero {
@@ -1533,6 +1551,10 @@ body {
   }
   .main-gallery-list {
     justify-content: center;
+  }
+  .team {
+    padding-bottom: 120px;
+    padding-top: 120px;
   }
 
   .team-container-resume {
